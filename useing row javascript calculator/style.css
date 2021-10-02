@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --body-bg-color: #88d2c4;
+  --calculator-bg-color: #eaedef;
+  --empty-num-and-body-bg-color: #eaedef;
+  --history-text-color: #919191;
+  --button-color-one: #20b2aa;
+  --button-color-two: #ffa500;
+  --button-color-three: #f08080;
+  --button-color-four: #7d93e0;
+  --button-color-five: #9477af;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--body-bg-color);
+}
+#root > .container {
+  width: 320px;
+  height: auto;
+  padding: 20px;
+  background: var(--calculator-bg-color);
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+#root > .container > .calculator-body {
+  width: 100%;
+}
+
+#root > .container > .calculator-body > #output {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+#root > .container > .calculator-body > #output > .history {
+  width: 100%;
+  height: 35px;
+}
+#root > .container > .calculator-body > #output > .history p {
+  font-size: 24px;
+  color: var(--history-text-color);
+  font-weight: 500;
+  float: right;
+}
+
+#root > .container > .calculator-body > #output > .result {
+  width: 100%;
+  height: 85px;
+}
+
+#root > .container > .calculator-body > #output > .result p {
+  font-size: 70px;
+  float: right;
+}
+
+#root > .container > .calculator-body > #keybord {
+  width: 100%;
+}
+
+#root > .container > .calculator-body > #keybord > button {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  font-size: 18px;
+  background: rgb(230, 230, 230);
+  margin: 5px;
+  padding: 2.5px;
+}
+
+#root > .container > .calculator-body > #keybord > button:nth-child(4) {
+  background-color: var(--button-color-one);
+  font-size: 26px;
+}
+
+#root > .container > .calculator-body > #keybord > button:nth-child(8) {
+  background-color: var(--button-color-two);
+  font-size: 26px;
+}
+#root > .container > .calculator-body > #keybord > button:nth-child(12) {
+  background-color: var(--button-color-three);
+  font-size: 26px;
+}
+#root > .container > .calculator-body > #keybord > button:nth-child(16) {
+  background-color: var(--button-color-four);
+  font-size: 26px;
+}
+
+#root > .container > .calculator-body > #keybord > button:nth-child(17) {
+  width: 200px;
+  border-radius: 15px;
+}
+#root > .container > .calculator-body > #keybord > button:nth-child(18) {
+  background-color: var(--button-color-five);
+  font-size: 26px;
+}
